@@ -1,1 +1,1 @@
-# practice
+dnsmasq-china-list
