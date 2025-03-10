@@ -15,16 +15,10 @@ jobs:
       run: |
         chmod +x script.sh
         ./script.sh
-- name: Commit and Push
-    run: |
-      git config user.name "fengqyv5"
-      git config user.email "fengqyv5@github.com"
-
-    # 添加更改
-      git add .
-
-    # 提交更改
-      git commit -m "Automated processing and merging of txt files" || echo "No changes to commit"
-
-    # 推送到仓库（需要权限）
-      git push origin HEAD
+    - name: Commit and Push
+      run: |
+        git config user.name "fengqyv5"
+        git config user.email "fengqyv5@github.com"
+        git add .
+        git commit -m "Automated update ChinaList-For-AdguardHome" || echo "No changes to commit"
+        git push origin HEAD
